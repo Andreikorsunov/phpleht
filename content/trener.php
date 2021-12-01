@@ -2,7 +2,7 @@
 require("conf.php");
 session_start();
 if(!isset($_SESSION["tuvastamine"])){
-    header("Location: loginab.php");
+    header("Location: logintr.php");
     exit();
 }
 global $yhendus;
@@ -120,7 +120,7 @@ if(isset ($_REQUEST['muuda'])) {
             echo "Viga";
         }
     }
-    $yhendus->close();  
+    $yhendus->close();
     ?>
 </div>
 
