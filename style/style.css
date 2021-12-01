@@ -1,3 +1,26 @@
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 27%;
+}
+label {
+    color: black;
+    font-family: "Times New Roman";
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-left: 6%;
+}
+
+th, td {
+    padding: 15px;
+}
 body {
     font-family: Times New Roman;
     padding: 18px;
@@ -42,6 +65,36 @@ body {
 .leftcolumn {
     float: left;
     width: 50%;
+}
+input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 /* Right column */
@@ -116,7 +169,6 @@ select{
     width: 100%;
     min-width: 15ch;
     max-width: 30ch;
-    border: 1px solid var(--select-border);
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
     font-size: 1.25rem;
